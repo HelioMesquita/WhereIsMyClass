@@ -106,6 +106,7 @@
             <objects>
                 <controller identifier="ClassesInterfaceController" title="Minhas Aulas" id="IcK-De-twP" customClass="ClassesInterfaceController" customModule="vejaMinhaSala_WatchKit_Extension">
                     <items>
+                        <spriteKitScene alignment="left" id="u8G-aJ-Ed2"/>
                         <table alignment="left" id="gtk-et-PXf">
                             <items>
                                 <tableRow identifier="ClassRowController" id="7ak-20-EHM" customClass="ClassRowController" customModule="vejaMinhaSala_WatchKit_Extension">
@@ -128,6 +129,7 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="spriteKitScene" destination="u8G-aJ-Ed2" id="wsg-vh-aV2"/>
                         <outlet property="tableView" destination="gtk-et-PXf" id="Bny-Qr-jdN"/>
                     </connections>
                 </controller>

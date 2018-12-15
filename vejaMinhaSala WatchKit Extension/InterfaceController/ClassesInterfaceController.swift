@@ -8,10 +8,12 @@
 
 import WatchKit
 import Foundation
+import SpriteKit
 
 class ClassesInterfaceController: WKInterfaceController {
 
   @IBOutlet var tableView: WKInterfaceTable!
+  @IBOutlet weak var spriteKitScene: WKInterfaceSKScene!
 
   var subjects: [Subject] = [] {
     didSet {
@@ -19,17 +21,20 @@ class ClassesInterfaceController: WKInterfaceController {
     }
   }
 
-  override func willActivate() {
-
-  }
-
 
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
+
+    if let scene: SKScene = SKScene(fileNamed: "Loading.sks") {
+      self.spriteKitScene.presentScene(scene, transition: .crossFade(withDuration: 0.1))
+    }
+
     guard let academicRegister = context as? String else { return }
     var request = URLRequest(url: URL(string: "https://wormhole-eniac.herokuapp.com/classes/" + academicRegister)!)
     request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalCacheData
     URLSession.shared.dataTask(with: request) { (data, response, error) in
+      self.spriteKitScene.setHeight(0)
+      self.spriteKitScene.scene?.isPaused = true
       guard let data = data else { return }
       do {
         let apiSubjects = try JSONDecoder().decode(Subjects.self, from: data)
