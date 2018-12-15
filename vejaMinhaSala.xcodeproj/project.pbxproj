@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD9B4AA521BF0FE600F5EFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B4AA421BF0FE600F5EFBF /* AppDelegate.swift */; };
+		FD9B4AA721BF0FE600F5EFBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B4AA621BF0FE600F5EFBF /* ViewController.swift */; };
+		FD9B4AAA21BF0FE600F5EFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9B4AA821BF0FE600F5EFBF /* Main.storyboard */; };
+		FD9B4AAC21BF0FE800F5EFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9B4AAB21BF0FE800F5EFBF /* Assets.xcassets */; };
+		FD9B4AAF21BF0FE800F5EFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9B4AAD21BF0FE800F5EFBF /* LaunchScreen.storyboard */; };
+		FD9B4ABA21BF0FE800F5EFBF /* vejaMinhaSalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B4AB921BF0FE800F5EFBF /* vejaMinhaSalaTests.swift */; };
+		FD9B4ABF21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD9B4ABE21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App.app */; };
+		FD9B4AC521BF0FE800F5EFBF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9B4AC321BF0FE800F5EFBF /* Interface.storyboard */; };
+		FD9B4AC721BF0FE800F5EFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9B4AC621BF0FE800F5EFBF /* Assets.xcassets */; };
+		FD9B4ACE21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD9B4ACD21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD9B4AD321BF0FE900F5EFBF /* LoginInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B4AD221BF0FE900F5EFBF /* LoginInterfaceController.swift */; };
+		FD9B4AD521BF0FE900F5EFBF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B4AD421BF0FE900F5EFBF /* ExtensionDelegate.swift */; };
+		FD9B4AD721BF0FE900F5EFBF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9B4AD621BF0FE900F5EFBF /* NotificationController.swift */; };
+		FD9B4AD921BF0FE900F5EFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9B4AD821BF0FE900F5EFBF /* Assets.xcassets */; };
+		FDE1656F21BF29AC0097D72D /* ClassesDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE1656E21BF29AC0097D72D /* ClassesDetailInterfaceController.swift */; };
+		FDE1657121BF2B300097D72D /* ClassRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE1657021BF2B300097D72D /* ClassRowController.swift */; };
+		FDE1657721BF35070097D72D /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE1657521BF35070097D72D /* Subject.swift */; };
+		FDE1657821BF35070097D72D /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE1657621BF35070097D72D /* Subjects.swift */; };
+		FDE1657C21BF3ABF0097D72D /* ClassesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE1657B21BF3ABF0097D72D /* ClassesInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD9B4AB621BF0FE800F5EFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9B4A9921BF0FE600F5EFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD9B4AA021BF0FE600F5EFBF;
+			remoteInfo = vejaMinhaSala;
+		};
+		FD9B4AC021BF0FE800F5EFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9B4A9921BF0FE600F5EFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD9B4ABD21BF0FE800F5EFBF;
+			remoteInfo = "vejaMinhaSala WatchKit App";
+		};
+		FD9B4ACF21BF0FE900F5EFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD9B4A9921BF0FE600F5EFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD9B4ACC21BF0FE900F5EFBF;
+			remoteInfo = "vejaMinhaSala WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD9B4AE121BF0FE900F5EFBF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD9B4ACE21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9B4AE521BF0FE900F5EFBF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FD9B4ABF21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD9B4AA121BF0FE600F5EFBF /* vejaMinhaSala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vejaMinhaSala.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9B4AA421BF0FE600F5EFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD9B4AA621BF0FE600F5EFBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD9B4AA921BF0FE600F5EFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD9B4AAB21BF0FE800F5EFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD9B4AAE21BF0FE800F5EFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD9B4AB021BF0FE800F5EFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9B4AB521BF0FE800F5EFBF /* vejaMinhaSalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vejaMinhaSalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9B4AB921BF0FE800F5EFBF /* vejaMinhaSalaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vejaMinhaSalaTests.swift; sourceTree = "<group>"; };
+		FD9B4ABB21BF0FE800F5EFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9B4ABE21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vejaMinhaSala WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9B4AC421BF0FE800F5EFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FD9B4AC621BF0FE800F5EFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD9B4AC821BF0FE800F5EFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9B4ACD21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "vejaMinhaSala WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD9B4AD221BF0FE900F5EFBF /* LoginInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaceController.swift; sourceTree = "<group>"; };
+		FD9B4AD421BF0FE900F5EFBF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FD9B4AD621BF0FE900F5EFBF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FD9B4AD821BF0FE900F5EFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD9B4ADA21BF0FE900F5EFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9B4ADB21BF0FE900F5EFBF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FDE1656E21BF29AC0097D72D /* ClassesDetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesDetailInterfaceController.swift; sourceTree = "<group>"; };
+		FDE1657021BF2B300097D72D /* ClassRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRowController.swift; sourceTree = "<group>"; };
+		FDE1657521BF35070097D72D /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		FDE1657621BF35070097D72D /* Subjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
+		FDE1657B21BF3ABF0097D72D /* ClassesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD9B4A9E21BF0FE600F5EFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9B4AB221BF0FE800F5EFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9B4ACA21BF0FE900F5EFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD9B4A9821BF0FE600F5EFBF = {
+			isa = PBXGroup;
+			children = (
+				FD9B4AA321BF0FE600F5EFBF /* vejaMinhaSala */,
+				FD9B4AB821BF0FE800F5EFBF /* vejaMinhaSalaTests */,
+				FD9B4AC221BF0FE800F5EFBF /* vejaMinhaSala WatchKit App */,
+				FD9B4AD121BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension */,
+				FD9B4AA221BF0FE600F5EFBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD9B4AA221BF0FE600F5EFBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD9B4AA121BF0FE600F5EFBF /* vejaMinhaSala.app */,
+				FD9B4AB521BF0FE800F5EFBF /* vejaMinhaSalaTests.xctest */,
+				FD9B4ABE21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App.app */,
+				FD9B4ACD21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD9B4AA321BF0FE600F5EFBF /* vejaMinhaSala */ = {
+			isa = PBXGroup;
+			children = (
+				FD9B4AA421BF0FE600F5EFBF /* AppDelegate.swift */,
+				FD9B4AA621BF0FE600F5EFBF /* ViewController.swift */,
+				FD9B4AA821BF0FE600F5EFBF /* Main.storyboard */,
+				FD9B4AAB21BF0FE800F5EFBF /* Assets.xcassets */,
+				FD9B4AAD21BF0FE800F5EFBF /* LaunchScreen.storyboard */,
+				FD9B4AB021BF0FE800F5EFBF /* Info.plist */,
+			);
+			path = vejaMinhaSala;
+			sourceTree = "<group>";
+		};
+		FD9B4AB821BF0FE800F5EFBF /* vejaMinhaSalaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD9B4AB921BF0FE800F5EFBF /* vejaMinhaSalaTests.swift */,
+				FD9B4ABB21BF0FE800F5EFBF /* Info.plist */,
+			);
+			path = vejaMinhaSalaTests;
+			sourceTree = "<group>";
+		};
+		FD9B4AC221BF0FE800F5EFBF /* vejaMinhaSala WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FD9B4AC321BF0FE800F5EFBF /* Interface.storyboard */,
+				FD9B4AC621BF0FE800F5EFBF /* Assets.xcassets */,
+				FD9B4AC821BF0FE800F5EFBF /* Info.plist */,
+			);
+			path = "vejaMinhaSala WatchKit App";
+			sourceTree = "<group>";
+		};
+		FD9B4AD121BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDE1657421BF34EA0097D72D /* Cell */,
+				FDE1657321BF34E30097D72D /* InterfaceController */,
+				FDE1657221BF34DB0097D72D /* Models */,
+				FD9B4AD421BF0FE900F5EFBF /* ExtensionDelegate.swift */,
+				FD9B4AD621BF0FE900F5EFBF /* NotificationController.swift */,
+				FD9B4AD821BF0FE900F5EFBF /* Assets.xcassets */,
+				FD9B4ADA21BF0FE900F5EFBF /* Info.plist */,
+				FD9B4ADB21BF0FE900F5EFBF /* PushNotificationPayload.apns */,
+			);
+			path = "vejaMinhaSala WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FDE1657221BF34DB0097D72D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDE1657621BF35070097D72D /* Subjects.swift */,
+				FDE1657521BF35070097D72D /* Subject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDE1657321BF34E30097D72D /* InterfaceController */ = {
+			isa = PBXGroup;
+			children = (
+				FD9B4AD221BF0FE900F5EFBF /* LoginInterfaceController.swift */,
+				FDE1657B21BF3ABF0097D72D /* ClassesInterfaceController.swift */,
+				FDE1656E21BF29AC0097D72D /* ClassesDetailInterfaceController.swift */,
+			);
+			path = InterfaceController;
+			sourceTree = "<group>";
+		};
+		FDE1657421BF34EA0097D72D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FDE1657021BF2B300097D72D /* ClassRowController.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD9B4AA021BF0FE600F5EFBF /* vejaMinhaSala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9B4AE621BF0FE900F5EFBF /* Build configuration list for PBXNativeTarget "vejaMinhaSala" */;
+			buildPhases = (
+				FD9B4A9D21BF0FE600F5EFBF /* Sources */,
+				FD9B4A9E21BF0FE600F5EFBF /* Frameworks */,
+				FD9B4A9F21BF0FE600F5EFBF /* Resources */,
+				FD9B4AE521BF0FE900F5EFBF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD9B4AC121BF0FE800F5EFBF /* PBXTargetDependency */,
+			);
+			name = vejaMinhaSala;
+			productName = vejaMinhaSala;
+			productReference = FD9B4AA121BF0FE600F5EFBF /* vejaMinhaSala.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD9B4AB421BF0FE800F5EFBF /* vejaMinhaSalaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9B4AE921BF0FE900F5EFBF /* Build configuration list for PBXNativeTarget "vejaMinhaSalaTests" */;
+			buildPhases = (
+				FD9B4AB121BF0FE800F5EFBF /* Sources */,
+				FD9B4AB221BF0FE800F5EFBF /* Frameworks */,
+				FD9B4AB321BF0FE800F5EFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD9B4AB721BF0FE800F5EFBF /* PBXTargetDependency */,
+			);
+			name = vejaMinhaSalaTests;
+			productName = vejaMinhaSalaTests;
+			productReference = FD9B4AB521BF0FE800F5EFBF /* vejaMinhaSalaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD9B4ABD21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9B4AE221BF0FE900F5EFBF /* Build configuration list for PBXNativeTarget "vejaMinhaSala WatchKit App" */;
+			buildPhases = (
+				FD9B4ABC21BF0FE800F5EFBF /* Resources */,
+				FD9B4AE121BF0FE900F5EFBF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD9B4AD021BF0FE900F5EFBF /* PBXTargetDependency */,
+			);
+			name = "vejaMinhaSala WatchKit App";
+			productName = "vejaMinhaSala WatchKit App";
+			productReference = FD9B4ABE21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FD9B4ACC21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9B4ADE21BF0FE900F5EFBF /* Build configuration list for PBXNativeTarget "vejaMinhaSala WatchKit Extension" */;
+			buildPhases = (
+				FD9B4AC921BF0FE900F5EFBF /* Sources */,
+				FD9B4ACA21BF0FE900F5EFBF /* Frameworks */,
+				FD9B4ACB21BF0FE900F5EFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "vejaMinhaSala WatchKit Extension";
+			productName = "vejaMinhaSala WatchKit Extension";
+			productReference = FD9B4ACD21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD9B4A9921BF0FE600F5EFBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Hélio Mesquita";
+				TargetAttributes = {
+					FD9B4AA021BF0FE600F5EFBF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FD9B4AB421BF0FE800F5EFBF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FD9B4AA021BF0FE600F5EFBF;
+					};
+					FD9B4ABD21BF0FE800F5EFBF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FD9B4ACC21BF0FE900F5EFBF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FD9B4A9C21BF0FE600F5EFBF /* Build configuration list for PBXProject "vejaMinhaSala" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD9B4A9821BF0FE600F5EFBF;
+			productRefGroup = FD9B4AA221BF0FE600F5EFBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD9B4AA021BF0FE600F5EFBF /* vejaMinhaSala */,
+				FD9B4AB421BF0FE800F5EFBF /* vejaMinhaSalaTests */,
+				FD9B4ABD21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App */,
+				FD9B4ACC21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD9B4A9F21BF0FE600F5EFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9B4AAF21BF0FE800F5EFBF /* LaunchScreen.storyboard in Resources */,
+				FD9B4AAC21BF0FE800F5EFBF /* Assets.xcassets in Resources */,
+				FD9B4AAA21BF0FE600F5EFBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9B4AB321BF0FE800F5EFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9B4ABC21BF0FE800F5EFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9B4AC721BF0FE800F5EFBF /* Assets.xcassets in Resources */,
+				FD9B4AC521BF0FE800F5EFBF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9B4ACB21BF0FE900F5EFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9B4AD921BF0FE900F5EFBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD9B4A9D21BF0FE600F5EFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9B4AA721BF0FE600F5EFBF /* ViewController.swift in Sources */,
+				FD9B4AA521BF0FE600F5EFBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9B4AB121BF0FE800F5EFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9B4ABA21BF0FE800F5EFBF /* vejaMinhaSalaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD9B4AC921BF0FE900F5EFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE1657721BF35070097D72D /* Subject.swift in Sources */,
+				FDE1656F21BF29AC0097D72D /* ClassesDetailInterfaceController.swift in Sources */,
+				FDE1657121BF2B300097D72D /* ClassRowController.swift in Sources */,
+				FD9B4AD721BF0FE900F5EFBF /* NotificationController.swift in Sources */,
+				FDE1657C21BF3ABF0097D72D /* ClassesInterfaceController.swift in Sources */,
+				FD9B4AD521BF0FE900F5EFBF /* ExtensionDelegate.swift in Sources */,
+				FDE1657821BF35070097D72D /* Subjects.swift in Sources */,
+				FD9B4AD321BF0FE900F5EFBF /* LoginInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD9B4AB721BF0FE800F5EFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD9B4AA021BF0FE600F5EFBF /* vejaMinhaSala */;
+			targetProxy = FD9B4AB621BF0FE800F5EFBF /* PBXContainerItemProxy */;
+		};
+		FD9B4AC121BF0FE800F5EFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD9B4ABD21BF0FE800F5EFBF /* vejaMinhaSala WatchKit App */;
+			targetProxy = FD9B4AC021BF0FE800F5EFBF /* PBXContainerItemProxy */;
+		};
+		FD9B4AD021BF0FE900F5EFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD9B4ACC21BF0FE900F5EFBF /* vejaMinhaSala WatchKit Extension */;
+			targetProxy = FD9B4ACF21BF0FE900F5EFBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD9B4AA821BF0FE600F5EFBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD9B4AA921BF0FE600F5EFBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD9B4AAD21BF0FE800F5EFBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD9B4AAE21BF0FE800F5EFBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD9B4AC321BF0FE800F5EFBF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD9B4AC421BF0FE800F5EFBF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD9B4ADC21BF0FE900F5EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD9B4ADD21BF0FE900F5EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD9B4ADF21BF0FE900F5EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMS2232J28;
+				INFOPLIST_FILE = "vejaMinhaSala WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = callidus.vejaMinhaSala.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FD9B4AE021BF0FE900F5EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMS2232J28;
+				INFOPLIST_FILE = "vejaMinhaSala WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = callidus.vejaMinhaSala.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		FD9B4AE321BF0FE900F5EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMS2232J28;
+				IBSC_MODULE = vejaMinhaSala_WatchKit_Extension;
+				INFOPLIST_FILE = "vejaMinhaSala WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = callidus.vejaMinhaSala.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FD9B4AE421BF0FE900F5EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMS2232J28;
+				IBSC_MODULE = vejaMinhaSala_WatchKit_Extension;
+				INFOPLIST_FILE = "vejaMinhaSala WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = callidus.vejaMinhaSala.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		FD9B4AE721BF0FE900F5EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMS2232J28;
+				INFOPLIST_FILE = vejaMinhaSala/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = callidus.vejaMinhaSala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD9B4AE821BF0FE900F5EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMS2232J28;
+				INFOPLIST_FILE = vejaMinhaSala/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = callidus.vejaMinhaSala;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD9B4AEA21BF0FE900F5EFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vejaMinhaSalaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = callidus.vejaMinhaSalaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vejaMinhaSala.app/vejaMinhaSala";
+			};
+			name = Debug;
+		};
+		FD9B4AEB21BF0FE900F5EFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vejaMinhaSalaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = callidus.vejaMinhaSalaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vejaMinhaSala.app/vejaMinhaSala";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD9B4A9C21BF0FE600F5EFBF /* Build configuration list for PBXProject "vejaMinhaSala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9B4ADC21BF0FE900F5EFBF /* Debug */,
+				FD9B4ADD21BF0FE900F5EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9B4ADE21BF0FE900F5EFBF /* Build configuration list for PBXNativeTarget "vejaMinhaSala WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9B4ADF21BF0FE900F5EFBF /* Debug */,
+				FD9B4AE021BF0FE900F5EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9B4AE221BF0FE900F5EFBF /* Build configuration list for PBXNativeTarget "vejaMinhaSala WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9B4AE321BF0FE900F5EFBF /* Debug */,
+				FD9B4AE421BF0FE900F5EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9B4AE621BF0FE900F5EFBF /* Build configuration list for PBXNativeTarget "vejaMinhaSala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9B4AE721BF0FE900F5EFBF /* Debug */,
+				FD9B4AE821BF0FE900F5EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9B4AE921BF0FE900F5EFBF /* Build configuration list for PBXNativeTarget "vejaMinhaSalaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9B4AEA21BF0FE900F5EFBF /* Debug */,
+				FD9B4AEB21BF0FE900F5EFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD9B4A9921BF0FE600F5EFBF /* Project object */;
+}

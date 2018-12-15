@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Digite seu RA-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Digite seu RA" id="AgC-eL-Hgc" customClass="LoginInterfaceController" customModule="vejaMinhaSala_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="35" alignment="left" id="5gd-9K-gLc">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <group width="1" height="30" alignment="left" id="7Wd-RI-tho">
+                            <items>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="1" id="Bki-9v-2CI">
+                                    <connections>
+                                        <action selector="oneTapped" destination="AgC-eL-Hgc" id="uN8-nu-LWr"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="2" id="nrq-Gm-2b3">
+                                    <connections>
+                                        <action selector="twoTapped" destination="AgC-eL-Hgc" id="LHV-wv-xvT"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="3" id="pyI-u4-KOd">
+                                    <connections>
+                                        <action selector="threeTapped" destination="AgC-eL-Hgc" id="yxe-f2-P9c"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="30" alignment="left" id="dFS-jM-gAq">
+                            <items>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="4" id="P1k-zx-EwA">
+                                    <connections>
+                                        <action selector="fourTapped" destination="AgC-eL-Hgc" id="GUp-A5-iwP"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="5" id="LXo-La-adS">
+                                    <connections>
+                                        <action selector="fiveTapped" destination="AgC-eL-Hgc" id="xj0-wa-PU9"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="6" id="Z6S-Zy-cNq">
+                                    <connections>
+                                        <action selector="sixTapped" destination="AgC-eL-Hgc" id="Ub2-t8-nAv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="30" alignment="left" id="wQn-D7-Vaw">
+                            <items>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="7" id="aWf-y2-CVD">
+                                    <connections>
+                                        <action selector="sevenTapped" destination="AgC-eL-Hgc" id="WLE-zC-ewl"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="8" id="shU-OD-mxq">
+                                    <connections>
+                                        <action selector="eightTapped" destination="AgC-eL-Hgc" id="D6z-mh-WEb"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="9" id="5IR-3H-gMZ">
+                                    <connections>
+                                        <action selector="nineTapped" destination="AgC-eL-Hgc" id="ypH-NX-Ww7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="30" alignment="left" id="jYy-4E-4Jz">
+                            <items>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="&lt;" id="r4o-dp-2Jg">
+                                    <connections>
+                                        <action selector="deleteTapped" destination="AgC-eL-Hgc" id="tMj-PO-6Mp"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="0" id="QVe-i8-GFT">
+                                    <connections>
+                                        <action selector="zeroTapped" destination="AgC-eL-Hgc" id="w9u-EH-wUR"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33300000000000002" height="1" alignment="left" title="ok" id="656-Bj-LsK">
+                                    <connections>
+                                        <action selector="okTapped" destination="AgC-eL-Hgc" id="lkK-3e-Y0P"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="academicRegisterLabel" destination="5gd-9K-gLc" id="Es6-0r-m7u"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="191" y="5"/>
+        </scene>
+        <!--Minhas Aulas-->
+        <scene sceneID="PCx-B5-xOF">
+            <objects>
+                <controller identifier="ClassesInterfaceController" title="Minhas Aulas" id="IcK-De-twP" customClass="ClassesInterfaceController" customModule="vejaMinhaSala_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="gtk-et-PXf">
+                            <items>
+                                <tableRow identifier="ClassRowController" id="7ak-20-EHM" customClass="ClassRowController" customModule="vejaMinhaSala_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="Rhr-zn-RW0">
+                                        <items>
+                                            <label width="0.59999999999999998" alignment="left" text="Segunda-Feira" textAlignment="left" numberOfLines="2" id="Lco-W2-WhY">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
+                                            <label width="0.40000000000000002" height="1" alignment="left" text="24N" textAlignment="right" id="3oJ-9o-wln">
+                                                <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="classNumberLabel" destination="3oJ-9o-wln" id="MMa-yi-y8l"/>
+                                        <outlet property="weekDayLabel" destination="Lco-W2-WhY" id="oE4-ig-dt1"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="gtk-et-PXf" id="Bny-Qr-jdN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="454" y="6.5"/>
+        </scene>
+        <!--Detalhes-->
+        <scene sceneID="NPi-eS-egZ">
+            <objects>
+                <controller identifier="ClassesDetailInterfaceController" title="Detalhes" id="FOW-c9-gYO" customClass="ClassesDetailInterfaceController" customModule="vejaMinhaSala_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" text="Engenharia de Software" textAlignment="left" numberOfLines="0" id="ddW-x1-0xP">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <separator alignment="left" id="60K-FF-0zG"/>
+                        <label width="1" height="21" alignment="left" text="Segunda-Feira" textAlignment="left" id="oND-Zb-UV0">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <group width="1" alignment="left" id="iNs-a8-zav">
+                            <items>
+                                <label width="0.40000000000000002" alignment="left" verticalAlignment="center" text="Inicio:" id="qFe-7L-sxz"/>
+                                <label width="0.59999999999999998" alignment="left" verticalAlignment="center" text="20:40" textAlignment="right" id="c4V-nx-3Oc">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="A0T-0n-0XG">
+                            <items>
+                                <label width="0.5" alignment="left" verticalAlignment="center" text="Termino:" textAlignment="left" id="BSP-W5-RRF"/>
+                                <label width="0.5" alignment="left" verticalAlignment="center" text="20:40" textAlignment="right" id="zwz-3T-M7r">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="vMK-Br-X0t">
+                            <items>
+                                <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text="Sala:" id="cvW-wV-l3h"/>
+                                <label width="0.29999999999999999" alignment="left" verticalAlignment="center" text="24N" textAlignment="right" id="JJA-C4-dps">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Professor/Matéria" textAlignment="center" id="bBj-6W-gf2"/>
+                        <label width="1" alignment="left" text="denilson caraÇa n2prga" textAlignment="center" numberOfLines="0" id="1Xh-lU-6jq">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="classNumberLabel" destination="JJA-C4-dps" id="hsK-LB-7uj"/>
+                        <outlet property="endLabel" destination="zwz-3T-M7r" id="1sL-aZ-anj"/>
+                        <outlet property="professorLabel" destination="1Xh-lU-6jq" id="s6N-wI-PJN"/>
+                        <outlet property="startLabel" destination="c4V-nx-3Oc" id="tkI-zu-MTU"/>
+                        <outlet property="subjectLabel" destination="ddW-x1-0xP" id="dCU-OK-SUN"/>
+                        <outlet property="weekDayLabel" destination="oND-Zb-UV0" id="Kso-Sg-Hsy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="737" y="6.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="vejaMinhaSala_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="vejaMinhaSala_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
