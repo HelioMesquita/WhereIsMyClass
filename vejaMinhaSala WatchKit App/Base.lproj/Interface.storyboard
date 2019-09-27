@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch42" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14868" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14643"/>
     </dependencies>
     <scenes>
         <!--Digite seu RA-->
@@ -110,12 +108,12 @@
                         <table alignment="left" id="gtk-et-PXf">
                             <items>
                                 <tableRow identifier="ClassRowController" id="7ak-20-EHM" customClass="ClassRowController" customModule="vejaMinhaSala_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="Rhr-zn-RW0">
+                                    <group key="rootItem" width="1" height="50" alignment="left" id="Rhr-zn-RW0">
                                         <items>
-                                            <label width="0.59999999999999998" alignment="left" text="Segunda-Feira" textAlignment="left" numberOfLines="2" id="Lco-W2-WhY">
+                                            <label width="0.59999999999999998" alignment="left" verticalAlignment="center" text="Segunda-Feira" textAlignment="left" baselineAdjustment="alignCenters" numberOfLines="2" id="Lco-W2-WhY">
                                                 <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                             </label>
-                                            <label width="0.40000000000000002" height="1" alignment="left" text="24N" textAlignment="right" id="3oJ-9o-wln">
+                                            <label width="0.40000000000000002" height="1" alignment="left" text="24N" textAlignment="right" baselineAdjustment="alignCenters" id="3oJ-9o-wln">
                                                 <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                                             </label>
                                         </items>
@@ -172,8 +170,8 @@
                                 </label>
                             </items>
                         </group>
-                        <label width="1" alignment="left" text="Professor/Matéria" textAlignment="center" id="bBj-6W-gf2"/>
-                        <label width="1" alignment="left" text="denilson caraÇa n2prga" textAlignment="center" numberOfLines="0" id="1Xh-lU-6jq">
+                        <label width="1" alignment="left" text="Professor" textAlignment="center" id="bBj-6W-gf2"/>
+                        <label width="1" alignment="left" text="denilson" textAlignment="center" numberOfLines="0" id="1Xh-lU-6jq">
                             <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                         </label>
                     </items>

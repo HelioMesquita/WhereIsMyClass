@@ -1,5 +1,12 @@
 import Foundation
 
 struct Subjects: Codable {
-	let subjects: [Subject]
+
+    let classId: String
+    let subjects: [Subject]
+
+    enum CodingKeys: String, CodingKey {
+        case classId = "turma"
+        case subjects = "materias"
+    }
 }
