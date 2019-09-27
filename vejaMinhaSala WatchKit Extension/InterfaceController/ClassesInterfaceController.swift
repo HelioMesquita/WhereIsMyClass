@@ -27,7 +27,6 @@ class ClassesInterfaceController: WKInterfaceController {
     }
   }
 
-
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
 
@@ -38,7 +37,7 @@ class ClassesInterfaceController: WKInterfaceController {
     guard let academicRegister = context as? String else { return }
     var request = URLRequest(url: URL(string: "https://wormhole-eniac.herokuapp.com/classes/" + academicRegister)!)
     request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalCacheData
-    URLSession.shared.dataTask(with: request) { (data, response, error) in
+    URLSession.shared.dataTask(with: request) { (data, _, error) in
 
       guard let data = data else { return }
       do {

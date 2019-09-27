@@ -1,4 +1,3 @@
-
 struct Subject: Codable {
 
     let weekDay: String
